@@ -1,0 +1,25 @@
+{
+  "name": "anchor-test",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "test:mint": "jest --testTimeout=20000 --testNamePattern=Mint",
+    "test:burn": "jest --testTimeout=20000 --testNamePattern=Burn",
+    "test:claim": "jest --testTimeout=20000 --testNamePattern=Claim",
+    "test:withdraw": "jest --testTimeout=20000 --testNamePattern=Withdraw",
+    "test:instant_burn": "jest --testTimeout=20000 --testNamePattern=Instant"
+  },
+  "dependencies": {
+    "@anchor-protocol/anchor.js": "^2.0.0",
+    "@terra-money/terra.js": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.13.15",
+    "esbuild-jest": "^0.5.0",
+    "esbuild-runner": "^2.2.1",
+    "jest": "^27.3.1"
+  }
+}
